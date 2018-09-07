@@ -156,7 +156,7 @@ def test_svm(datasetName):
                 clf_name = item['name']
                 clf = item['learner']
 
-                result_key_name = clf_name + '_k_fold_' + str(k)
+                result_key_name = str(k) + ' - k_fold - ' + clf_name  
 
                 if not(result_key_name in results_dic):
                     results_dic[result_key_name] = {
