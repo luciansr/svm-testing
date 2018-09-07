@@ -76,32 +76,36 @@ def test_svm(datasetName):
     C = 1.0  # SVM regularization parameter
     typesOfSVMs = [
         {
-            'name': 'linear',
+            'name': 'Linear',
             'learner': svm.SVC(kernel='linear', C=C)
         },
         {
-            'name': 'polinomial grau 3',
+            'name': 'Polinomial grau 3',
             'learner': svm.SVC(kernel='poly', degree=3, C=C)
         },
         {
-            'name': 'polinomial grau 4',
+            'name': 'Polinomial grau 4',
             'learner': svm.SVC(kernel='poly', degree=4, C=C)
         },
         {
-            'name': 'sigmoide gama 1',
+            'name': 'Sigmoide gama 1',
             'learner': svm.SVC(kernel='sigmoid', gamma=1, C=C)
         },
         {
-            'name': 'sigmoide gama 0.5',
+            'name': 'Sigmoide gama 0.5',
             'learner': svm.SVC(kernel='sigmoid', gamma=0.5, C=C)
         },
         {
-            'name': 'sigmoide gama 0.01',
+            'name': 'Sigmoide gama 0.01',
             'learner': svm.SVC(kernel='sigmoid', gamma=0.01, C=C)
         },
         {
-            'name': 'rbf',
+            'name': 'RBF',
             'learner': svm.SVC(kernel='rbf', C=C)
+        },
+        {
+            'name': 'Original Data',
+            'learner': svm.SVC(kernel='linear', C=C)
         },
     ]
 
@@ -122,7 +126,7 @@ def test_svm(datasetName):
     typesOfSVMs = ({ 
         'name': item['name'],
         'learner': item['learner'],
-        'resultY': item['learner'].predict(X)
+        'resultY': [1.0 if x > 0.0 else -1.0 for x in item['learner'].predict(X)] if item['name'] != 'Original Data' else Y
     } for item in typesOfSVMs)
 
     #print(svm_learner.predict([X[0, :]]))
@@ -144,7 +148,7 @@ def test_svm(datasetName):
     # titles = ('SVC with linear kernel','SVC with linear kernel')
 
     # Set-up 2x2 grid for plotting.
-    fig, sub = plt.subplots(3, 3)
+    fig, sub = plt.subplots(2, 4)
     plt.subplots_adjust(wspace=0.4, hspace=0.4)
 
     X0, X1 = X[:, 0], X[:, 1]
@@ -174,8 +178,8 @@ def test_svm(datasetName):
         ax.scatter(X0, X1, c=resultY, cmap=plt.cm.coolwarm, s=20, edgecolors='k')
         ax.set_xlim(xx.min(), xx.max())
         ax.set_ylim(yy.min(), yy.max())
-        ax.set_xlabel('Sepal length')
-        ax.set_ylabel('Sepal width')
+        ax.set_xlabel('At1')
+        ax.set_ylabel('At2')
         ax.set_xticks(())
         ax.set_yticks(())
         ax.set_title(title)
