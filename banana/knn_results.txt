@@ -1,0 +1,32 @@
+2 - k_fold - 2 Vizinhos: Min E_out = 0.12150943396226416 on k_fold 2
+2 - k_fold - 3 Vizinhos: Min E_out = 0.11132075471698114 on k_fold 2
+2 - k_fold - 5 Vizinhos: Min E_out = 0.10377358490566038 on k_fold 2
+2 - k_fold - 10 Vizinhos: Min E_out = 0.09471698113207547 on k_fold 2
+2 - k_fold - 20 Vizinhos: Min E_out = 0.0939622641509434 on k_fold 2
+2 - k_fold - 50 Vizinhos: Min E_out = 0.09320754716981132 on k_fold 2
+2 - k_fold - 100 Vizinhos: Min E_out = 0.09811320754716982 on k_fold 2
+
+5 - k_fold - 2 Vizinhos: Min E_out = 0.11037735849056604 on k_fold 5
+5 - k_fold - 3 Vizinhos: Min E_out = 0.10471698113207548 on k_fold 5
+5 - k_fold - 5 Vizinhos: Min E_out = 0.09245283018867924 on k_fold 5
+5 - k_fold - 10 Vizinhos: Min E_out = 0.09245283018867924 on k_fold 5
+5 - k_fold - 20 Vizinhos: Min E_out = 0.08018867924528301 on k_fold 5
+5 - k_fold - 50 Vizinhos: Min E_out = 0.08962264150943396 on k_fold 5
+5 - k_fold - 100 Vizinhos: Min E_out = 0.08584905660377358 on k_fold 5
+
+10 - k_fold - 2 Vizinhos: Min E_out = 0.09056603773584905 on k_fold 10
+10 - k_fold - 3 Vizinhos: Min E_out = 0.08490566037735849 on k_fold 10
+10 - k_fold - 5 Vizinhos: Min E_out = 0.08113207547169811 on k_fold 10
+10 - k_fold - 10 Vizinhos: Min E_out = 0.06415094339622641 on k_fold 10
+10 - k_fold - 20 Vizinhos: Min E_out = 0.06981132075471698 on k_fold 10
+10 - k_fold - 50 Vizinhos: Min E_out = 0.07547169811320754 on k_fold 10
+10 - k_fold - 100 Vizinhos: Min E_out = 0.07735849056603773 on k_fold 10
+
+final result:
+2 Vizinhos: Min E_out = 0.09056603773584905 on k_fold 10
+3 Vizinhos: Min E_out = 0.08490566037735849 on k_fold 10
+5 Vizinhos: Min E_out = 0.08113207547169811 on k_fold 10
+10 Vizinhos: Min E_out = 0.06415094339622641 on k_fold 10
+20 Vizinhos: Min E_out = 0.06981132075471698 on k_fold 10
+50 Vizinhos: Min E_out = 0.07547169811320754 on k_fold 10
+100 Vizinhos: Min E_out = 0.07735849056603773 on k_fold 10
