@@ -4,18 +4,8 @@ import numpy as np
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 
-# %matplotlib inline
-
 ## parameters
-## datasetName = filename
-## kernelType: 
-#    The kernel function can be any of the following:
-#    
-#    linear: (x, x').
-#    polynomial: (\gamma \langle x, x'\rangle + r)^d. d is specified by keyword degree, r by coef0.
-#    rbf: \exp(-\gamma \|x-x'\|^2). \gamma is specified by keyword gamma, must be greater than 0.
-#    sigmoid (\tanh(\gamma \langle x,x'\rangle + r)), where r is specified by coef0.
-
+# datasetName = filename
 def make_meshgrid(x, y, h=.02):
     """Create a mesh of points to plot in
 
@@ -129,45 +119,12 @@ def test_svm(datasetName):
         'resultY': [1.0 if x > 0.0 else -1.0 for x in item['learner'].predict(X)] if item['name'] != 'Original Data' else Y
     } for item in typesOfSVMs)
 
-    #print(svm_learner.predict([X[0, :]]))
-    #print(X)
-    #print(Y)
-
-    ## plot
-    # X0, X1 = X[:, 0], X[:, 1]
-    # xx, yy = make_meshgrid(X0, X1)
-
-    # fig, sub = plt.subplots(1, 1)
-    # plt.subplots_adjust(wspace=0.4, hspace=0.4)
-    # # plot(clf, title, ax, xx, yy, X0, X1, y, plt = plt):
-
-    # models = (svm_learner, svm_learner)
-    # # models = (clf.fit(X, y) for clf in models)
-
-    # # title for the plots
-    # titles = ('SVC with linear kernel','SVC with linear kernel')
-
     # Set-up 2x2 grid for plotting.
     fig, sub = plt.subplots(2, 4)
     plt.subplots_adjust(wspace=0.4, hspace=0.4)
 
     X0, X1 = X[:, 0], X[:, 1]
     xx, yy = make_meshgrid(X0, X1)
-
-    #plot(svm_learner, 'SVC with linear kernel', sub, xx, yy, X0, X1, Y, plt)
-
-
-    # for clf, title, ax in zip(models, titles, sub):
-    #     plot_contours(ax, clf, xx, yy,
-    #               cmap=plt.cm.coolwarm, alpha=0.8)
-    #     ax.scatter(X0, X1, c=Y, cmap=plt.cm.coolwarm, s=20, edgecolors='k')
-    #     ax.set_xlim(xx.min(), xx.max())
-    #     ax.set_ylim(yy.min(), yy.max())
-    #     ax.set_xlabel('Sepal length')
-    #     ax.set_ylabel('Sepal width')
-    #     ax.set_xticks(())
-    #     ax.set_yticks(())
-    #     ax.set_title(title)
 
     for SVMitem, ax in zip(typesOfSVMs, sub.flatten()):
         clf = SVMitem['learner']
@@ -187,25 +144,6 @@ def test_svm(datasetName):
     
     plt.show()
 
-
-    for item in typesOfSVMs:
-        name = item['name']
-        classifier = item['learner']
-        print(name)
-
-        for k in k_folds:
-            shuffledData = shuffle(data)
-            X = shuffledData.values[:, :2]
-            Y = shuffledData.values[:,2]
-
-            for i in range(k): 
-                break
-
-
-
-
-    E_out = 1
-
-    return E_out
+    return None
 
 test_svm('banana-data.dat')
