@@ -1,26 +1,26 @@
-2 - k_fold - Linear: Min E_out = 0.41773584905660377 on k_fold 2
-2 - k_fold - Polinomial grau 3: Min E_out = 0.3558490566037736 on k_fold 2
-2 - k_fold - Polinomial grau 4: Min E_out = 0.3630188679245283 on k_fold 2
-2 - k_fold - Sigmoide gama 1: Min E_out = 0.7135849056603774 on k_fold 2
-2 - k_fold - Sigmoide gama 0.5: Min E_out = 0.7045283018867925 on k_fold 2
+2 - k_fold - Linear: Min E_out =             0.41773584905660377 on k_fold 2
+2 - k_fold - Polinomial grau 3: Min E_out =  0.3558490566037736 on k_fold 2
+2 - k_fold - Polinomial grau 4: Min E_out =  0.3630188679245283 on k_fold 2
+2 - k_fold - Sigmoide gama 1: Min E_out =    0.7135849056603774 on k_fold 2
+2 - k_fold - Sigmoide gama 0.5: Min E_out =  0.7045283018867925 on k_fold 2
 2 - k_fold - Sigmoide gama 0.01: Min E_out = 0.44528301886792454 on k_fold 2
-2 - k_fold - RBF: Min E_out = 0.09471698113207547 on k_fold 2
+2 - k_fold - RBF: Min E_out =                0.09471698113207547 on k_fold 2
 
-5 - k_fold - Linear: Min E_out = 0.42452830188679247 on k_fold 5
-5 - k_fold - Polinomial grau 3: Min E_out = 0.35471698113207545 on k_fold 5
-5 - k_fold - Polinomial grau 4: Min E_out = 0.3481132075471698 on k_fold 5
-5 - k_fold - Sigmoide gama 1: Min E_out = 0.6971698113207547 on k_fold 5
-5 - k_fold - Sigmoide gama 0.5: Min E_out = 0.6839622641509434 on k_fold 5
+5 - k_fold - Linear: Min E_out =             0.42452830188679247 on k_fold 5
+5 - k_fold - Polinomial grau 3: Min E_out =  0.35471698113207545 on k_fold 5
+5 - k_fold - Polinomial grau 4: Min E_out =  0.3481132075471698 on k_fold 5
+5 - k_fold - Sigmoide gama 1: Min E_out =    0.6971698113207547 on k_fold 5
+5 - k_fold - Sigmoide gama 0.5: Min E_out =  0.6839622641509434 on k_fold 5
 5 - k_fold - Sigmoide gama 0.01: Min E_out = 0.4330188679245283 on k_fold 5
-5 - k_fold - RBF: Min E_out = 0.09339622641509433 on k_fold 5
+5 - k_fold - RBF: Min E_out =                0.09339622641509433 on k_fold 5
 
-10 - k_fold - Linear: Min E_out = 0.4207547169811321 on k_fold 10
-10 - k_fold - Polinomial grau 3: Min E_out = 0.32264150943396225 on k_fold 10
-10 - k_fold - Polinomial grau 4: Min E_out = 0.3339622641509434 on k_fold 10
-10 - k_fold - Sigmoide gama 1: Min E_out = 0.6924528301886792 on k_fold 10
-10 - k_fold - Sigmoide gama 0.5: Min E_out = 0.6735849056603773 on k_fold 10
+10 - k_fold - Linear: Min E_out =             0.4207547169811321 on k_fold 10
+10 - k_fold - Polinomial grau 3: Min E_out =  0.32264150943396225 on k_fold 10
+10 - k_fold - Polinomial grau 4: Min E_out =  0.3339622641509434 on k_fold 10
+10 - k_fold - Sigmoide gama 1: Min E_out =    0.6924528301886792 on k_fold 10
+10 - k_fold - Sigmoide gama 0.5: Min E_out =  0.6735849056603773 on k_fold 10
 10 - k_fold - Sigmoide gama 0.01: Min E_out = 0.41509433962264153 on k_fold 10
-10 - k_fold - RBF: Min E_out = 0.06792452830188679 on k_fold 10
+10 - k_fold - RBF: Min E_out =                0.06792452830188679 on k_fold 10
 
 final result:
 Linear: Min E_out = 0.41773584905660377 on k_fold 2

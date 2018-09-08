@@ -86,8 +86,8 @@ def test_svm(datasetName):
             'learner': svm.SVC(kernel='sigmoid', gamma=0.5, C=C)
         },
         {
-            'name': 'Sigmoide gama 0.01',
-            'learner': svm.SVC(kernel='sigmoid', gamma=0.01, C=C)
+            'name': 'Sigmoide gama 0.05',
+            'learner': svm.SVC(kernel='sigmoid', gamma=0.05, C=C)
         },
         {
             'name': 'RBF',
