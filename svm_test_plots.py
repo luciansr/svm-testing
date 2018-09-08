@@ -67,7 +67,7 @@ def test_svm(datasetName):
     typesOfSVMs = [
         {
             'name': 'Linear',
-            'learner': svm.SVC(kernel='linear', C=C)
+            'learner': svm.LinearSVC()
         },
         {
             'name': 'Polinomial grau 3',

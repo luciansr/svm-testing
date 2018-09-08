@@ -5,17 +5,6 @@ from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 import sys
 
-# %matplotlib inline
-
-## parameters
-## datasetName = filename
-## kernelType: 
-#    The kernel function can be any of the following:
-#    
-#    linear: (x, x').
-#    polynomial: (\gamma \langle x, x'\rangle + r)^d. d is specified by keyword degree, r by coef0.
-#    rbf: \exp(-\gamma \|x-x'\|^2). \gamma is specified by keyword gamma, must be greater than 0.
-#    sigmoid (\tanh(\gamma \langle x,x'\rangle + r)), where r is specified by coef0.
 
 def make_meshgrid(x, y, h=.02):
     """Create a mesh of points to plot in
@@ -78,7 +67,7 @@ def test_svm(datasetName):
     typesOfSVMs = [
         {
             'name': 'Linear',
-            'learner': svm.SVC(kernel='linear', C=C),
+            'learner': svm.LinearSVC(),
             'E_out': None,
             'E_out_description': None
         },
